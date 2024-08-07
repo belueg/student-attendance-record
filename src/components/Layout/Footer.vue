@@ -89,5 +89,37 @@
     font-size: 14px;
     color: $color-text-footer;
   }
+
+  @media (max-width: 400px) {
+    justify-content: center;
+    padding: 8px 4px;
+
+    &__content {
+      padding: 0 8px;
+      gap: 8px;
+      flex-direction: column;
+    }
+
+    &__summary {
+      gap: 8px;
+      flex-direction: column;
+    }
+
+    &__item {
+      gap: 2px; 
+      flex: 1 1 50%;
+    }
+
+    &__label {
+      width: 20px; 
+      height: 20px; 
+      font-size: 12px; 
+    }
+
+    &__count {
+      font-size: 10px; 
+    }
+  }
 }
+
 </style>
